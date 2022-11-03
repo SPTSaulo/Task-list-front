@@ -1,0 +1,44 @@
+.app {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+  align-content: center;
+  justify-content: center;
+}
+
+.app-title {
+  margin-top: 30px;
+  text-align: center;
+  color: #F5F5F5;
+  font-size: 50px;
+}
+
+.first-list {
+  position: relative;
+}
+
+.blur-filter {
+  filter: blur(5px);
+}
+
+.add-button {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  bottom: -18px;
+  right: -18px;
+  background-color: #EED5FD99;
+  border-radius: 10px;
+}
+
+.add-button:hover {
+  cursor: pointer;
+}
+
+.add-button img {
+  width: 26px;
+  height: 26px;
+  margin: 0 auto;
+}
