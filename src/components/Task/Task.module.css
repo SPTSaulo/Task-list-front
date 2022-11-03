@@ -1,0 +1,66 @@
+.task {
+    background-color: #EED5FDCC;
+    width: 200px;
+    max-width: 225px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 16px;
+    position: relative;
+}
+
+.task + .task {
+    margin-bottom: 10px;
+}
+
+.task-title:hover {
+    cursor: pointer;
+}
+
+.tag {
+    position: absolute;
+    height: 13px;
+    width: 50px;
+    top: -10px;
+    padding: 5px;
+    font-size: 11px;
+    color: #F5F5F5;
+    background-color: #0693A9;
+    right: calc(50% - 35px);
+    border-radius: 50%;
+    border: 1px solid #F5F5F5;
+}
+
+.left-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    background-color: #8D7AFF;
+    position: absolute;
+    border-radius: 100%;
+    top: calc(50% - 11px);
+    left: -11px;
+}
+
+.right-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    background-color: #8D7AFF;
+    position: absolute;
+    border-radius: 100%;
+    top: calc(50% - 11px);
+    right: -11px;
+}
+
+.left-arrow:hover {
+    cursor: pointer;
+}
+
+.right-arrow:hover {
+    cursor: pointer;
+}

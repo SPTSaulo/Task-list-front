@@ -1,0 +1,105 @@
+.modal {
+    position: absolute;
+    background-color: #FFFFFFCD;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px 20px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input label {
+    margin-bottom: 5px;
+}
+
+.input + .input {
+    margin-top: 10px;
+}
+
+.input input, .input select {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    height: 20px;
+    width: 100%;
+}
+
+.input input {
+    height: 20px;
+}
+
+.input select {
+    height: 30px;
+}
+
+.error {
+    color: #FF9494;
+}
+
+.submit-button {
+    width: 120px;
+    height: 30px;
+    margin-top: 13px;
+    text-transform: uppercase;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.submit-button:hover {
+    padding: 5px;
+    border: none;
+    background-color: #2EE59D;
+    box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.close-button {
+    position: absolute;
+    right: 25px;
+    top: 3px;
+    width: 10px;
+    height: 10px;
+    opacity: 0.3;
+    border: none;
+}
+.close-button:hover {
+    opacity: 1;
+    cursor: pointer;
+    background-color: transparent;
+}
+.close-button:before, .close-button:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 30px;
+    width: 2px;
+    background-color: #333;
+}
+.close-button:before {
+    transform: rotate(45deg);
+}
+.close-button:after {
+    transform: rotate(-45deg);
+}
